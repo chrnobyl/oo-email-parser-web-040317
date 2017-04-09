@@ -17,9 +17,6 @@ class EmailParser
 	def parse
 		@addresses = @emails.split(/[, ]/)
 		@addresses.uniq.select {|el| el != ""}
-		
-
-
 	end
 
 end
